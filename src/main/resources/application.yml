@@ -1,6 +1,17 @@
+
 spring:
   application:
     name: JWT-AUTH-SYSTEM
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwtdb
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 server:
   port: 8081
